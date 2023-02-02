@@ -1,6 +1,6 @@
 # Docker-Commands-Spe
 
-### Run Mongo In Docker Container
+## Run Mongo In Docker Container
 
 1. `docker pull mongo`
 
@@ -12,11 +12,11 @@
 
     Connection Link  -  mongodb://localhost:27017
 
-##### Connect With Bash
+   ##### Connect With Bash
    `docker exec -it mongo bash`
 
 
-### Run Postgress in Docker Container
+## Run Postgress in Docker Container
 
 1. `docker pull postgres`
 
