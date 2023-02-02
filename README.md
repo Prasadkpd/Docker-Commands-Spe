@@ -14,3 +14,14 @@
 
 ##### Connect With Bash
    `docker exec -it mongo bash`
+
+
+### Run Postgress in Docker Container
+
+1. `docker pull postgres`
+
+1. `docker run --name con-postgres -p 5432:5432 -e POSTGRES_PASSWORD=admin -d postgres`
+
+1. `docker ps`
+
+1. `docker stop con-postgres`
