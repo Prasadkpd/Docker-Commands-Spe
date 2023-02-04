@@ -22,7 +22,7 @@
 
 1. `docker create -v /var/lib/postgres --name postgresdata postgres`
 
-1. `docker run --name con-postgres -p 5432:5432 -e POSTGRES_PASSWORD=admin --volumes-from postgresdata -d postgres`
+1. `docker run --name con-postgres -p 5432:5432 -e POSTGRES_PASSWORD=admin --mount type=bind, source="$(pwd)"/postgres_data, target=/var/lib/postgres  -d postgres`
 
 1. `docker ps`
 
